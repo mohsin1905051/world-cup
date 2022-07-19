@@ -1,0 +1,177 @@
+/* -------------------------------------
+                  common styles or utilities
+            -------------------------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+/* -------------------------------------
+                  top banner style
+            -------------------------------------------------- */
+
+.top-banner {
+    background-color: #161616;
+    display: flex;
+    color: white;
+    width: 1321px;
+    height: 646px;
+    margin: 50px 140px;
+    border-radius: 20px;
+    margin-bottom: 130px;
+}
+
+.intro {
+    margin: 30px 106px;
+}
+
+.top {
+    width: 50%;
+}
+
+.boldline {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+
+}
+
+.player-image img {
+    width: 95%;
+    margin-top: 5.5em;
+}
+
+.button {
+    padding: 18px 36px;
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    border-radius: 7px;
+}
+
+.intro-para {
+    margin-bottom: 4em;
+    text-align: justify;
+}
+
+/* -------------------------------------
+                  middle section
+            -------------------------------------------------- */
+.all-middle-part {
+    width: 1321px;
+    margin: 130px 140px 130px 140px;
+    display: flex;
+
+}
+
+.side-para {
+    width: 252px;
+    height: 64px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 30px 30px 30px;
+}
+
+
+
+.middle-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+
+.middle-left {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 12px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0px 24px;
+
+}
+
+.transfer-button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.transfer-para {
+    font-weight: bold;
+}
+
+.transfer {
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    margin-left: 2px;
+}
+
+.side-para-blog {
+    width: 252px;
+    height: 64px;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 30px 30px 30px;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon1 {
+    margin-right: 40px;
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.transfer-image-down-part {
+    margin: 20px 20px;
+}
+
+.transfer-image img {
+    width: 100%;
+}
+
+/* -------------------------------------
+                  FOOTER
+            -------------------------------------------------- */
+footer {
+    width: 1600px;
+    height: 444px;
+    background-color: #161616;
+    color: white;
+}
+
+.goal-text {
+    text-align: center;
+    margin-top: 130px;
+
+}
+
+hr {
+    border: 1px solid gainsboro;
+    margin-top: 50px;
+}
+
+.last-text {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0.5em;
+    text-align: center;
+}
