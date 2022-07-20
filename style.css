@@ -121,11 +121,13 @@ body {
 }
 
 .transfer-button {
-    width: 100px;
-    height: 30px;
-    border: 1px solid black;
+    padding: 4px 17px;
+    border: 1px solid #161616;
+    color: #161616;
+    font-weight: 600;
     border-radius: 5px;
     text-align: center;
+    text-decoration: none;
 }
 
 .transfer-para {
@@ -160,6 +162,23 @@ body {
 }
 
 /* -------------------------------------
+                  VIEW ALL PART
+            -------------------------------------------------- */
+.view-all-d {
+    text-align: center;
+}
+
+.view-all-d a {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    border-radius: 7px;
+    display: none;
+}
+
+
+/* -------------------------------------
                   FOOTER
             -------------------------------------------------- */
 footer {
@@ -182,12 +201,275 @@ hr {
 }
 
 .last-text {
-    width: 898px;
+    width: 930px;
     display: grid;
     margin-left: 21.94%;
     grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+.last-2-link {
+    display: flex;
+}
+
+
+.last-link {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    text-align: center;
     color: #B9B9B9;
+}
+
+
+.social-media {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* -------------------------------------
+                 RESPONSIVENESS - MEDIA QUERYS
+            --------------------------------------------*/
+
+
+/* -------------------------------------
+                    1. For tablet devices
+            -------------------------------------------------- */
+@media screen and (min-width: 688px) and (max-width: 1024px) {
+
+    /* header section  */
+
+    .top-banner {
+        width: 95%;
+        padding-bottom: 10px;
+    }
+
+    .intro {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    .boldline {
+        font-size: 40px;
+    }
+
+    .intro-para {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: white;
+    }
+
+    .player-image {
+        margin-left: 0;
+    }
+
+    .player-image img {
+        width: 100%;
+        position: relative;
+        top: 14px;
+    }
+
+    /* middle section  */
+
+    .all-middle-part {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto 200px;
+    }
+
+    .side-part {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 100%;
+        margin: 0 auto 20px;
+        height: 100px;
+    }
+
+    .middle-right {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+    }
+
+    .transfer {
+        width: 100%;
+    }
+
+    .transfer-image img {
+        width: 100%;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    .view-all-d {
+        text-align: center;
+        margin-bottom: 5em;
+    }
+
+    .view-all-d a {
+        padding: 12px 24px;
+        text-decoration: none;
+        color: white;
+        background-color: #DD0000;
+        border-radius: 7px;
+        display: inline;
+
+    }
+
+    /* FOOTER PART */
+    footer {
+        width: 100%;
+    }
+
+    .goal-text {
+        width: 70%;
+    }
+
+    .last-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-bottom: 50px;
+        width: 90%;
+
+        font-size: 16px;
+        font-weight: 500;
+        color: #B9B9B9;
+    }
+}
+
+/* -------------------------------------
+                    1. For mobile devices
+            -------------------------------------------------- */
+
+/* header section  */
+
+@media screen and (max-width:688px) {
+    .top-banner {
+        width: 95%;
+        padding-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .intro {
+        width: 80%;
+
+        padding-left: 0;
+        margin: 0 auto;
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boldline {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .intro-para {
+        text-align: center;
+    }
+
+    .player-image {
+        margin-left: 100px;
+        position: relative;
+    }
+
+    .player-image img {
+        width: 75%;
+    }
+
+
+    /* middle section  */
+
+    .all-middle-part {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto 200px;
+    }
+
+    .side-part {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 80%;
+        margin: 0 auto 20px;
+        height: 260px;
+    }
+
+    .transfer-button {
+        margin: 10px;
+    }
+
+    .middle-right {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .transfer {
+        width: 100%;
+    }
+
+    .transfer-image img {
+        width: 100%;
+    }
+
+    /* FOOTER PART */
+    footer {
+        width: 430px;
+        height: 1000px;
+    }
+
+    .goal-text {
+        width: 80%;
+
+        margin-top: 24px;
+    }
+
+    .last-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        width: 90%;
+
+        font-size: 16px;
+        font-weight: 500;
+        color: #b9b9b9;
+    }
+
+    .last-link {
+        margin-bottom: 5em;
+    }
+
+
 }
