@@ -44,3 +44,36 @@
     font-weight: bold;
     margin: 32px 15px 0px 18px;
 }
+
+/* -------------------------------------
+                 RESPONSIVENESS - MEDIA QUERYS
+            --------------------------------------------*/
+/* -------------------------------------
+                    1. For tablet devices
+            -------------------------------------------------- */
+@media screen and (min-width: 688px) and (max-width: 1024px) {
+    .middle-right {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .match-time {
+        width: 95%;
+    }
+}
+
+/* -------------------------------------
+                    1. For mobile devices
+            -------------------------------------------------- */
+@media screen and (max-width:688px) {
+    .middle-right {
+        margin-left: 0;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .match-time {
+        width: 95%;
+    }
+}
